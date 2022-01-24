@@ -24,12 +24,12 @@ function App() {
       setmode("dark");
       document.body.style.background = "#1C2833 ";
       showalert("Dark mode has been enabled", "success");
-      document.title = "TextUtils - DarkMode";
+      // document.title = "TextUtils - DarkMode";
     } else {
       setmode("light");
       document.body.style.background = "white";
       showalert("Light mode has been enabled", "success");
-      document.title = "TextUtils - LightMode";
+      // document.title = "TextUtils - LightMode";
     }
   };
   return (
@@ -50,7 +50,7 @@ function App() {
             <Route exact path="/"> */}
               <TextForm
                 showalert={showalert}
-                heading="Enter the text to analyze below"
+                heading="Try TextUtils - Word counter, Character counter,Remove extra spaces"
                 mode={mode}
               />
           {/* //   </Route>
