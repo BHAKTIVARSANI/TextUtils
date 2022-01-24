@@ -30,11 +30,11 @@ export default function TextForm(props) {
     props.showalert("Copied all clipboard!", "success");
   };
 
-  //  handleExtraSpaces = () => {
-  //   let newText = text.split(/[ ]+ /);
-  //   setText(newText.join(" "));
-  //   props.showalert("Removed extra spaces!", "success");
-  // };
+   handleExtraSpaces = () => {
+    let newText = text.split(/[ ]+ /);
+    setText(newText.join(" "));
+    props.showalert("Removed extra spaces!", "success");
+  };
   const [text, setText] = useState("Enter text here");
   //  setText("New text");
   return (
